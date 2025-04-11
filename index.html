@@ -60,6 +60,21 @@
         justify-content: space-between;
         gap:90vh;
     }
+    @media (max-width: 768px) {
+  body {
+    margin: 1rem;
+    font-size: 11pt;
+  }
+  .Impresso td,
+  .Impresso th {
+    word-break: break-word;
+    white-space: normal;
+  }
+  .identificacao {
+    max-width: 100%;
+  }
+}
+
   </style>
 </head>
 <body>
@@ -80,7 +95,7 @@
                 </td>
             
                 <!-- Informações -->
-                <td style="width: 14%; border: 1px solid #999; padding: 0;">
+                <td class="Impresso" style="width: 14%; border: 1px solid #999; padding: 0;">
                   <table style="width: 100%; border-collapse: collapse; table-layout: fixed;">
                     <tr style="line-height: 1;">
                       <td style="border-bottom: 1px solid #999; padding: 4px; font-weight: bold;">Identificação:FMT.02.001/R.12</td>
@@ -419,7 +434,7 @@
   <table class="no-border">
     <tr><td><span class="bold">5.1 </span class="bold"><strong> Especificação dos filtros absolutos:</strong></td></tr></table>
         
-          <table border="1" style="border-collapse: collapse;">
+          <table >
             <tr>
               <th class="approval-title">Filtro<br>TAG/Quantidade</th>
               <th class="approval-title">Classe</th>
@@ -501,7 +516,7 @@
                     <tr><td><span class="bold"></span class="bold"><strong> Criterio de Aceitação:</strong> Valor encontrado para Concentração Montante (µg/l) ≥ 10 e Penetração (%) Ajusante deve ser ≤ 0,01% de vazamento na face e perímetro de cada filtro HEPA.</td></tr></table>
                 <table class="no-border">
                     <tr><td><span class="bold"></span class="bold"><strong> As Found / Conforme Encontrado</strong></td></tr></table>
-                <table border="1" style="border-collapse: collapse;">
+                <table >
             <tr>
               <th class="approval-title">Filtro<br>Número</th>
               <th class="approval-title">Concentração <br>(μg/l)<br>
@@ -627,7 +642,7 @@
 
         <table class="no-border">
         <tr><td><span class="bold"></span class="bold"><strong> As Left / Conforme Certificado</strong></td></tr></table>
-            <table border="1" style="border-collapse: collapse;">
+            <table >
                 <tr>
                   <th >Filtro<br>Número</th>
                   <th >Concentração <br>(μg/l)<br>
