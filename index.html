@@ -61,17 +61,42 @@
         gap:90vh;
     }
     @media (max-width: 768px) {
-  body {
-    margin: 1rem;
-    font-size: 11pt;
+      body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  box-sizing: border-box;
+}
+
+table {
+  width: 100%;
+  table-layout: auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.container, .content, .page {
+  width: 100%;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+.page, .container, .content {
+    padding: 0 0.5rem;
+    width: 100%;
   }
-  .Impresso td,
+  .final-page{
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+  }
+  .Impresso td, 
   .Impresso th {
     word-break: break-word;
     white-space: normal;
-  }
-  .identificacao {
-    max-width: 100%;
   }
 }
 
@@ -194,7 +219,7 @@
         </td>
     
         <!-- Informações -->
-        <td style="width: 14%; border: 1px solid #999; padding: 0;">
+        <td class="Impresso" style="width: 14%; border: 1px solid #999; padding: 0;">
           <table style="width: 100%; border-collapse: collapse; table-layout: fixed;">
             <tr style="line-height: 1;">
               <td style="border-bottom: 1px solid #999; padding: 4px; font-weight: bold;">Identificação:FMT.02.001/R.12</td>
@@ -253,7 +278,7 @@
         </td>
     
         <!-- Informações -->
-        <td style="width: 14%; border: 1px solid #999; padding: 0;">
+        <td class="Impresso" style="width: 14%; border: 1px solid #999; padding: 0;">
           <table style="width: 100%; border-collapse: collapse; table-layout: fixed;">
             <tr style="line-height: 1;">
               <td style="border-bottom: 1px solid #999; padding: 4px; font-weight: bold;">Identificação:FMT.02.001/R.12</td>
@@ -365,7 +390,7 @@
         </td>
     
         <!-- Informações -->
-        <td style="width: 14%; border: 1px solid #999; padding: 0;">
+        <td class="Impresso" style="width: 14%; border: 1px solid #999; padding: 0;">
           <table style="width: 100%; border-collapse: collapse; table-layout: fixed;">
             <tr style="line-height: 1;">
               <td style="border-bottom: 1px solid #999; padding: 4px; font-weight: bold;">Identificação:FMT.02.001/R.12</td>
@@ -412,7 +437,7 @@
         </td>
     
         <!-- Informações -->
-        <td style="width: 14%; border: 1px solid #999; padding: 0;">
+        <td class="Impresso" style="width: 14%; border: 1px solid #999; padding: 0;">
           <table style="width: 100%; border-collapse: collapse; table-layout: fixed;">
             <tr style="line-height: 1;">
               <td style="border-bottom: 1px solid #999; padding: 4px; font-weight: bold;">Identificação:FMT.02.001/R.12</td>
@@ -489,7 +514,7 @@
                       </td>
                   
                       <!-- Informações -->
-                      <td style="width: 14%; border: 1px solid #999; padding: 0;">
+                      <td class="Impresso" style="width: 14%; border: 1px solid #999; padding: 0;">
                         <table style="width: 100%; border-collapse: collapse; table-layout: fixed;">
                           <tr style="line-height: 1;">
                             <td style="border-bottom: 1px solid #999; padding: 4px; font-weight: bold;">Identificação:FMT.02.001/R.12</td>
@@ -567,7 +592,7 @@
                 </td>
             
                 <!-- Informações -->
-                <td style="width: 14%; border: 1px solid #999; padding: 0;">
+                <td class="Impresso" style="width: 14%; border: 1px solid #999; padding: 0;">
                   <table style="width: 100%; border-collapse: collapse; table-layout: fixed;">
                     <tr style="line-height: 1;">
                       <td style="border-bottom: 1px solid #999; padding: 4px; font-weight: bold;">Identificação:FMT.02.001/R.12</td>
@@ -621,7 +646,7 @@
           </td>
       
           <!-- Informações -->
-          <td style="width: 14%; border: 1px solid #999; padding: 0;">
+          <td class="Impresso" style="width: 14%; border: 1px solid #999; padding: 0;">
             <table style="width: 100%; border-collapse: collapse; table-layout: fixed;">
               <tr style="line-height: 1;">
                 <td style="border-bottom: 1px solid #999; padding: 4px; font-weight: bold;">Identificação:FMT.02.001/R.12</td>
@@ -713,7 +738,7 @@
                       </td>
                   
                       <!-- Informações -->
-                      <td style="width: 14%; border: 1px solid #999; padding: 0;">
+                      <td class="Impresso" style="width: 14%; border: 1px solid #999; padding: 0;">
                         <table style="width: 100%; border-collapse: collapse; table-layout: fixed;">
                           <tr style="line-height: 1;">
                             <td style="border-bottom: 1px solid #999; padding: 4px; font-weight: bold;">Identificação:FMT.02.001/R.12</td>
@@ -796,7 +821,7 @@
                   </td>
               
                   <!-- Informações -->
-                  <td style="width: 14%; border: 1px solid #999; padding: 0;">
+                  <td class="Impresso" style="width: 14%; border: 1px solid #999; padding: 0;">
                     <table style="width: 100%; border-collapse: collapse; table-layout: fixed;">
                       <tr style="line-height: 1;">
                         <td style="border-bottom: 1px solid #999; padding: 4px; font-weight: bold;">Identificação:FMT.02.001/R.12</td>
@@ -877,7 +902,7 @@
                           </td>
                       
                           <!-- Informações -->
-                          <td style="width: 14%; border: 1px solid #999; padding: 0;">
+                          <td class="Impresso" style="width: 14%; border: 1px solid #999; padding: 0;">
                             <table style="width: 100%; border-collapse: collapse; table-layout: fixed;">
                               <tr style="line-height: 1;">
                                 <td style="border-bottom: 1px solid #999; padding: 4px; font-weight: bold;">Identificação:FMT.02.001/R.12</td>
@@ -970,7 +995,7 @@
                             </td>
                         
                             <!-- Informações -->
-                            <td style="width: 14%; border: 1px solid #999; padding: 0;">
+                            <td class="Impresso" style="width: 14%; border: 1px solid #999; padding: 0;">
                               <table style="width: 100%; border-collapse: collapse; table-layout: fixed;">
                                 <tr style="line-height: 1;">
                                   <td style="border-bottom: 1px solid #999; padding: 4px; font-weight: bold;">Identificação:FMT.02.001/R.12</td>
@@ -1096,7 +1121,7 @@
                             </td>
                         
                             <!-- Informações -->
-                            <td style="width: 14%; border: 1px solid #999; padding: 0;">
+                            <td class="Impresso" style="width: 14%; border: 1px solid #999; padding: 0;">
                               <table style="width: 100%; border-collapse: collapse; table-layout: fixed;">
                                 <tr style="line-height: 1;">
                                   <td style="border-bottom: 1px solid #999; padding: 4px; font-weight: bold;">Identificação:FMT.02.001/R.12</td>
@@ -1180,7 +1205,7 @@
                                       </td>
                                   
                                       <!-- Informações -->
-                                      <td style="width: 14%; border: 1px solid #999; padding: 0;">
+                                      <td class="Impresso" style="width: 14%; border: 1px solid #999; padding: 0;">
                                         <table style="width: 100%; border-collapse: collapse; table-layout: fixed;">
                                           <tr style="line-height: 1;">
                                             <td style="border-bottom: 1px solid #999; padding: 4px; font-weight: bold;">Identificação:FMT.02.001/R.12</td>
@@ -1259,7 +1284,7 @@
                 </td>
             
                 <!-- Informações -->
-                <td style="width: 14%; border: 1px solid #999; padding: 0;">
+                <td class="Impresso" style="width: 14%; border: 1px solid #999; padding: 0;">
                   <table style="width: 100%; border-collapse: collapse; table-layout: fixed;">
                     <tr style="line-height: 1;">
                       <td style="border-bottom: 1px solid #999; padding: 4px; font-weight: bold;">Identificação:FMT.02.001/R.12</td>
@@ -1318,7 +1343,7 @@
                 </td>
             
                 <!-- Informações -->
-                <td style="width: 14%; border: 1px solid #999; padding: 0;">
+                <td class="Impresso" style="width: 14%; border: 1px solid #999; padding: 0;">
                   <table style="width: 100%; border-collapse: collapse; table-layout: fixed;">
                     <tr style="line-height: 1;">
                       <td style="border-bottom: 1px solid #999; padding: 4px; font-weight: bold;">Identificação:FMT.02.001/R.12</td>
@@ -1367,7 +1392,7 @@
             </td>
         
             <!-- Informações -->
-            <td style="width: 14%; border: 1px solid #999; padding: 0;">
+            <td class="Impresso" style="width: 14%; border: 1px solid #999; padding: 0;">
               <table style="width: 100%; border-collapse: collapse; table-layout: fixed;">
                 <tr style="line-height: 1;">
                   <td style="border-bottom: 1px solid #999; padding: 4px; font-weight: bold;">Identificação:FMT.02.001/R.12</td>
@@ -1511,7 +1536,7 @@
             </td>
         
             <!-- Informações -->
-            <td style="width: 14%; border: 1px solid #999; padding: 0;">
+            <td class="Impresso" style="width: 14%; border: 1px solid #999; padding: 0;">
               <table style="width: 100%; border-collapse: collapse; table-layout: fixed;">
                 <tr style="line-height: 1;">
                   <td style="border-bottom: 1px solid #999; padding: 4px; font-weight: bold;">Identificação:FMT.02.001/R.12</td>
@@ -1554,7 +1579,7 @@
               </td>
           
               <!-- Informações -->
-              <td style="width: 14%; border: 1px solid #999; padding: 0;">
+              <td class="Impresso" style="width: 14%; border: 1px solid #999; padding: 0;">
                 <table style="width: 100%; border-collapse: collapse; table-layout: fixed;">
                   <tr style="line-height: 1;">
                     <td style="border-bottom: 1px solid #999; padding: 4px; font-weight: bold;">Identificação:FMT.02.001/R.12</td>
@@ -1700,7 +1725,7 @@
               </td>
           
               <!-- Informações -->
-              <td style="width: 14%; border: 1px solid #999; padding: 0;">
+              <td class="Impresso" style="width: 14%; border: 1px solid #999; padding: 0;">
                 <table style="width: 100%; border-collapse: collapse; table-layout: fixed;">
                   <tr style="line-height: 1;">
                     <td style="border-bottom: 1px solid #999; padding: 4px; font-weight: bold;">Identificação:FMT.02.001/R.12</td>
@@ -1743,7 +1768,7 @@
                 </td>
             
                 <!-- Informações -->
-                <td style="width: 14%; border: 1px solid #999; padding: 0;">
+                <td class="Impresso" style="width: 14%; border: 1px solid #999; padding: 0;">
                   <table style="width: 100%; border-collapse: collapse; table-layout: fixed;">
                     <tr style="line-height: 1;">
                       <td style="border-bottom: 1px solid #999; padding: 4px; font-weight: bold;">Identificação:FMT.02.001/R.12</td>
@@ -1805,7 +1830,7 @@
                     </td>
                 
                     <!-- Informações -->
-                    <td style="width: 14%; border: 1px solid #999; padding: 0;">
+                    <td class="Impresso" style="width: 14%; border: 1px solid #999; padding: 0;">
                       <table style="width: 100%; border-collapse: collapse; table-layout: fixed;">
                         <tr style="line-height: 1;">
                           <td style="border-bottom: 1px solid #999; padding: 4px; font-weight: bold;">Identificação:FMT.02.001/R.12</td>
@@ -1927,7 +1952,7 @@
             </td>
         
             <!-- Informações -->
-            <td style="width: 14%; border: 1px solid #999; padding: 0;">
+            <td class="Impresso" style="width: 14%; border: 1px solid #999; padding: 0;">
               <table style="width: 100%; border-collapse: collapse; table-layout: fixed;">
                 <tr style="line-height: 1;">
                   <td style="border-bottom: 1px solid #999; padding: 4px; font-weight: bold;">Identificação:FMT.02.001/R.12</td>
@@ -2017,7 +2042,7 @@
         </td>
     
         <!-- Informações -->
-        <td style="width: 14%; border: 1px solid #999; padding: 0;">
+        <td class="Impresso" style="width: 14%; border: 1px solid #999; padding: 0;">
           <table style="width: 100%; border-collapse: collapse; table-layout: fixed;">
             <tr style="line-height: 1;">
               <td style="border-bottom: 1px solid #999; padding: 4px; font-weight: bold;">Identificação:FMT.02.001/R.12</td>
@@ -2096,7 +2121,7 @@
             </td>
         
             <!-- Informações -->
-            <td style="width: 14%; border: 1px solid #999; padding: 0;">
+            <td class="Impresso" style="width: 14%; border: 1px solid #999; padding: 0;">
               <table style="width: 100%; border-collapse: collapse; table-layout: fixed;">
                 <tr style="line-height: 1;">
                   <td style="border-bottom: 1px solid #999; padding: 4px; font-weight: bold;">Identificação:FMT.02.001/R.12</td>
@@ -2182,7 +2207,7 @@
             </td>
         
             <!-- Informações -->
-            <td style="width: 14%; border: 1px solid #999; padding: 0;">
+            <td class="Impresso" style="width: 14%; border: 1px solid #999; padding: 0;">
               <table style="width: 100%; border-collapse: collapse; table-layout: fixed;">
                 <tr style="line-height: 1;">
                   <td style="border-bottom: 1px solid #999; padding: 4px; font-weight: bold;">Identificação:FMT.02.001/R.12</td>
@@ -2251,7 +2276,7 @@
                 </td>
             
                 <!-- Informações -->
-                <td style="width: 14%; border: 1px solid #999; padding: 0;">
+                <td class="Impresso" style="width: 14%; border: 1px solid #999; padding: 0;">
                   <table style="width: 100%; border-collapse: collapse; table-layout: fixed;">
                     <tr style="line-height: 1;">
                       <td style="border-bottom: 1px solid #999; padding: 4px; font-weight: bold;">Identificação:FMT.02.001/R.12</td>
@@ -2316,7 +2341,7 @@
                   </td>
               
                   <!-- Informações -->
-                  <td style="width: 14%; border: 1px solid #999; padding: 0;">
+                  <td class="Impresso" style="width: 14%; border: 1px solid #999; padding: 0;">
                     <table style="width: 100%; border-collapse: collapse; table-layout: fixed;">
                       <tr style="line-height: 1;">
                         <td style="border-bottom: 1px solid #999; padding: 4px; font-weight: bold;">Identificação:FMT.02.001/R.12</td>
@@ -2459,7 +2484,7 @@
               </td>
           
               <!-- Informações -->
-              <td style="width: 14%; border: 1px solid #999; padding: 0;">
+              <td class="Impresso" style="width: 14%; border: 1px solid #999; padding: 0;">
                 <table style="width: 100%; border-collapse: collapse; table-layout: fixed;">
                   <tr style="line-height: 1;">
                     <td style="border-bottom: 1px solid #999; padding: 4px; font-weight: bold;">Identificação:FMT.02.001/R.12</td>
