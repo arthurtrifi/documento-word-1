@@ -62,59 +62,57 @@
         gap:90vh;
     }
     @media (max-width: 768px) {
-      body {
- 
-  padding: 0;
-  width: 100vw;
-  box-sizing: border-box;
-  display: flex;
-  justify-content: center;
-}
+  * {
+    box-sizing: border-box;
+  }
 
-.all {
-  width: 60vh;
-  padding: 1rem;
-}
-
-table {
-  width: 100% !important;
-  max-width: 100%;
-  box-sizing: border-box;
-}
-
-img {
-  width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-}
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1rem;
-}
-
-
-.container, .content, .page {
-  width: 100%;
-  padding: 0 1rem;
-  box-sizing: border-box;
-}
-.page, .container, .content {
-    padding: 0 0.5rem;
+  body {
+    padding: 0;
     width: 100%;
-  }
-  .final-page{
+    overflow-x: hidden;
     display: flex;
-    justify-content: space-between;
-    gap: 100px;
+    justify-content: center;
   }
+
+  .all {
+    width: 100%;
+    max-width: 500px;
+    padding: 1rem;
+  }
+
+  table {
+    width: 100% !important;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .container, .content, .page {
+    width: 100%;
+    padding: 0 1rem;
+    box-sizing: border-box;
+  }
+
+  .final-page {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: clamp(1rem, 5vw, 50px);
+  }
+
   .Impresso td, 
   .Impresso th {
     word-break: break-word;
     white-space: normal;
   }
 }
+
 
   </style>
 </head>
