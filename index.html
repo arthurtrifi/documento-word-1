@@ -59,63 +59,85 @@
         color: rgba(129, 129, 129, 0.698);
         display: flex;
         justify-content: space-between;
-        gap:90vh;
+        gap:100px;
     }
-    @media (max-width: 768px) {
-  * {
-    box-sizing: border-box;
+    .imagems{
+      width: 60vh;
+      height: auto
+    }
+    @media print {
+      .Impresso td, 
+  .Impresso th {
+    word-break: break-word;
+    white-space: normal;
   }
+      .imagems{
+        width: 30vh;
+        height: auto;
+      }
+  .espaco-impresso {
+    height: 300px; /* ou mais, tipo 400px */
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    page-break-inside: avoid;
+  }}
+    @media (max-width: 700px) {
+      body {
+  overflow-x: hidden;
+  padding: 0;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+}
 
-  body {
-    padding: 0;
-    width: 100%;
-    overflow-x: hidden;
-    display: flex;
-    justify-content: center;
-  }
+.all {
+  width: 100%;
+  max-width: 500px; /* ou 100% se preferir */
+  padding: 1rem;
+}
 
-  .all {
-    width: 100%;
-    max-width: 500px;
-    padding: 1rem;
-  }
-
-  table {
-    width: 100% !important;
-    max-width: 100%;
-    box-sizing: border-box;
-  }
-	.imagems{
-  width: 20vh;
+table {
+  width: 100% !important;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+.imagems{
+  width: 30vh;
   height: auto;
 }
-  img {
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+.container, .content, .page {
+  width: 100%;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+.page, .container, .content {
+    padding: 0 0.5rem;
     width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
   }
-
-  .container, .content, .page {
-    width: 100%;
-    padding: 0 1rem;
-    box-sizing: border-box;
-  }
-
   .final-page {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: clamp(1rem, 5vw, 50px);
-  }
-
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: clamp(1rem, 5vw, 50px);
+}
   .Impresso td, 
   .Impresso th {
     word-break: break-word;
     white-space: normal;
   }
 }
-
 
   </style>
 </head>
@@ -220,6 +242,8 @@
         <p>Pág.: 1/29</p>
     </div>
 </footer>
+<div class="espaco-impresso"></div>
+
   <!-- parte 2-->
   <table style="width: 80%; border-collapse: collapse; font-size: 10pt; color: #555;">
     <tr style="height: 50px;"> <!-- altura controlada -->
@@ -278,7 +302,8 @@
         <p>Pág.: 2/29</p>
     </div>
 </footer>
-
+<div class="espaco-impresso"></div>
+<div class="espaco-impresso"></div>
   <!-- parte 3-->
   <table style="width: 80%; border-collapse: collapse; font-size: 10pt; color: #555;">
     <tr style="height: 50px;"> <!-- altura controlada -->
@@ -391,6 +416,7 @@
         <p>Pág.: 3/29</p>
     </div>
 </footer>
+<div class="espaco-impresso"></div>
   <!-- parte 5-->
   <table style="width: 80%; border-collapse: collapse; font-size: 10pt; color: #555;">
     <tr style="height: 50px;"> <!-- altura controlada -->
@@ -430,7 +456,7 @@
     <tr><td><span class="bold">5. </span class="bold"><strong> Lay-out do equipamento:</strong></td></tr></table>
 
   <div style="text-align: center; margin: 30px 0;">
-    <img src="Captura de tela 2025-04-10 102422.png" alt="Lay-out do equipamento" style="width: 67vh; height: auto;">
+    <img src="Captura de tela 2025-04-10 102422.png" alt="Lay-out do equipamento" class="imagems">
   </div>
 
   <table style="width: 80%; border-collapse: collapse; font-size: 10pt; color: #555;">
@@ -553,7 +579,7 @@
                 <table class="no-border">
                     <tr><td><span class="bold"></span class="bold"><strong> Notas:</strong><br><br>1.	Caso qualquer filtro seja REPROVADO no ensaio de estanqueidade, substitua o filtro. Considere este formulário como AS FOUND. Realize a substituição do filtro e reinicie o ensaio com uma nova planilha - AS LEFT.<br><br>
                     2.	Caso o filtro apresente vazamento, registre nas folhas de Registro de Vazamentos e verifique se é possível realizar o reparo. Realize o reparo.</td></tr></table>
-        <img src="Captura de tela 2025-04-10 140641.png" alt="Filtro" style="width: 67vh; height: auto;">
+        <img src="Captura de tela 2025-04-10 140641.png" alt="Filtro" class="imagems">
                 <table class="no-border">
                     <tr><td><span class="bold"></span class="bold"><strong> Criterio de Aceitação:</strong> Valor encontrado para Concentração Montante (µg/l) ≥ 10 e Penetração (%) Ajusante deve ser ≤ 0,01% de vazamento na face e perímetro de cada filtro HEPA.</td></tr></table>
                 <table class="no-border">
@@ -641,7 +667,7 @@
                 <p><strong>TAG DO FILTRO:</strong> 1</p>
                 <p><strong>DIMENSÃO:</strong> 610 x 610 x 68</p>
             </div>
-    <img src="Captura de tela 2025-04-10 142435.png" alt="folha de registro de vazamento" style="width: 67vh; height: auto;">
+    <img src="Captura de tela 2025-04-10 142435.png" alt="folha de registro de vazamento" class="imagems">
     <footer>
       <div class="final-page">
           <p>FMT.02.001/R.12</p>
@@ -774,7 +800,7 @@
                     </tr>
                 </table>
 
-    <img src="Captura de tela 2025-04-10 144934.png" alt="Plenum filtro absoluto" style="width: 67vh; height: auto;">
+    <img src="Captura de tela 2025-04-10 144934.png" alt="Plenum filtro absoluto" class="imagems">
 
             <table class="no-border">
                 <tr><td><span class="bold"></span class="bold">Registrar os valores de leitura para cada filtro.<br><br>
@@ -945,7 +971,7 @@
                     
                     Calcular o desvio padrão relativo.
                     </span class="bold"></td></tr></table>
-    <img src="Captura de tela 2025-04-10 151745.png" alt="calcular o desvio padrão" style="width: 67vh; height: auto;">
+    <img src="Captura de tela 2025-04-10 151745.png" alt="calcular o desvio padrão" class="imagems">
             <table class="no-border">
                 <tr><td><span class="bold"></span class="bold"><strong> Critério de Aceitação: </strong>Média dos valores registrados deve atender a especificação de 0,45 m/s ± 0,05 (0,40 a 0,50 m/s). Casos especiais devem ser acordados previamente entre usuário e fornecedor. O Desvio Padrão Relativo deve ser ≤ 15%.</td></tr></table>
             <table class="no-border">
@@ -2075,7 +2101,7 @@
         </td>
       </tr>
   </table>
-  <img src="Captura de tela 2025-04-11 105558.png" alt="fluxo-page24" style="width: 67vh; height: auto;">
+  <img src="Captura de tela 2025-04-11 105558.png" alt="fluxo-page24" class="imagems">
   <table class="no-border">
     <tr><td><span class="bold"></span class="bold"><strong> As Found / Conforme Encontrado</strong></td></tr></table>
       <table>
